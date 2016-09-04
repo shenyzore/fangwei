@@ -8,10 +8,10 @@ if(!defined('InEmpireBak'))
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=big5">
-<title>«H®§´£¥Ü</title>
+<title>çºî…¾çŸ—ãƒœ</title>
 <link href="<?=$a?>images/css.css" rel="stylesheet" type="text/css">
 <SCRIPT language=javascript>
-var secs=3;//3¬í
+var secs=3;//3î„ˆ
 for(i=1;i<=secs;i++) 
 { window.setTimeout("update(" + i + ")", i * 1000);} 
 function update(num) 
@@ -33,7 +33,7 @@ else
 <br>
 <table width="500" border="0" align="center" cellpadding="3" cellspacing="1" bgcolor="#0472BC">
   <tr> 
-    <td height="25"><div align="center"><strong><font color="#FFFFFF">«H®§´£¥Ü</font></strong></div></td>
+    <td height="25"><div align="center"><strong><font color="#FFFFFF">çºî…¾çŸ—ãƒœ</font></strong></div></td>
   </tr>
   <tr bgcolor="#FFFFFF"> 
     <td height="80"> 
@@ -41,7 +41,7 @@ else
 	  <br>
         <b><?=$error?></b>
         <br>
-        <br><a href="<?=$gotourl?>">¦pªG±zªºÂsÄı¾¹¨S¦³¦Û°Ê¸õÂà¡A½ĞÂIÀ»³o¸Ì</a>
+        <br><a href="<?=$gotourl?>">î›–ç‹¦çœ¤î€™è…å‡ç«ŸâŠ¿Î¤îç¬†é“¬é”£î“‡å«ç¿´é˜‘ç¡‚æŸ‘</a>
 <br><br>
 	  </div></td>
   </tr>

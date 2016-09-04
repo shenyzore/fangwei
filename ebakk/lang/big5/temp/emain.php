@@ -3,16 +3,16 @@ if(!defined('InEmpireBak'))
 {
 	exit();
 }
-//¨t²Î«H®§
+//â•°å‚çºî…¾
 if (function_exists('ini_get')){
         $onoff = ini_get('register_globals');
     } else {
         $onoff = get_cfg_var('register_globals');
     }
     if ($onoff){
-        $onoff="¥´¶}";
+        $onoff="ã‚´ç§¨";
     }else{
-        $onoff="Ãö³¬";
+        $onoff="é—½è¶…";
     }
     if (function_exists('ini_get')){
         $upload = ini_get('file_uploads');
@@ -20,11 +20,11 @@ if (function_exists('ini_get')){
         $upload = get_cfg_var('file_uploads');
     }
     if ($upload){
-        $upload="¥i¥H";
+        $upload="î™¯î™";
     }else{
-        $upload="¤£¥i¥H";
+        $upload="ãƒî™¯î™";
     }
-//¨ú±o¾Ş§@¨t²Î
+//îŸçœ”å·¨îœ†â•°å‚
 function GetUseSys()
 {
 	$phpos=explode(" ",php_uname());
@@ -35,17 +35,17 @@ function GetUseSys()
 	}
 	return $sys;
 }
-//¬O§_¹B¦æ©ó¦w¥ş¼Ò¦¡
+//çŒîœ¥ç¬²ï¸½î „î›î„å®¶Î‘
 function GetPhpSafemod()
 {
 	$phpsafemod=get_cfg_var("safe_mode");
 	if($phpsafemod==1)
 	{
-		$word="PHP¹B¦æ©ó¦w¥ş¼Ò¦¡";
+		$word="PHPç¬²ï¸½î „î›î„å®¶Î‘";
 	}
 	else
 	{
-		$word="¥¿±`¼Ò¦¡";
+		$word="ã‚¿ç›½å®¶Î‘";
 	}
 	return $word;
 }
@@ -53,7 +53,7 @@ function GetPhpSafemod()
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=big5">
-<title>«Ò°ê³Æ¥÷¤ı</title>
+<title>î‚ç“£ç§°î½î»</title>
 <link href="images/css.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -62,12 +62,12 @@ function GetPhpSafemod()
   <tr> 
     <td><table width="98%" border="0" align="center" cellpadding="3" cellspacing="1" bgcolor="#0472BC">
         <tr> 
-          <td height="25"><strong><font color="#FFFFFF">§Úªºª¬ºA</font></strong></td>
+          <td height="25"><strong><font color="#FFFFFF">Ğ¸î€™î€‹ç¯ˆ</font></strong></td>
         </tr>
         <tr> 
           <td bgcolor="#FFFFFF"><table width="100%" border="0" cellpadding="3" cellspacing="1" bgcolor="#DBEAF5">
               <tr bgcolor="#FFFFFF"> 
-                <td height="25"> <div align="left">µn¿ıªÌ:&nbsp;<b> 
+                <td height="25"> <div align="left">ç¥…é­î€«:&nbsp;<b> 
                     <?=$loginin?>
                     </b></div></td>
               </tr>
@@ -81,8 +81,8 @@ function GetPhpSafemod()
           <tr> 
             
           <td height="38" bgcolor="#FFFFFF">
-<div align="center"><a href="http://www.phome.net/ecms6/" target="_blank"><strong><font color="#0000FF" size="3">«Ò°êºô¯¸ºŞ²z¨t²Î¥ş­±¶}·½ 
-              ¡Ğ ³Ì¦w¥ş¡B³ÌÃ­©wªº¶}·½CMS¨t²Î</font></strong></a></div></td>
+<div align="center"><a href="http://www.phome.net/ecms6/" target="_blank"><strong><font color="#0000FF" size="3">î‚ç“£å‘¼î‡­æ¨ç¶â•°å‚î„î„ªç§¨æ–¹ 
+              âŒ’ ç¨‹î›î„î“ˆç¨‹é“†ï¹šî€™ç§¨æ–¹CMSâ•°å‚</font></strong></a></div></td>
           </tr>
         </table>
       </td>
@@ -90,26 +90,26 @@ function GetPhpSafemod()
   <tr> 
     <td><table width="98%" border="0" align="center" cellpadding="3" cellspacing="1" bgcolor="#0472BC">
         <tr> 
-          <td height="25"><strong><font color="#FFFFFF">«Ò°ê³Æ¥÷¤ıª©ÅvÁn¦W</font></strong></td>
+          <td height="25"><strong><font color="#FFFFFF">î‚ç“£ç§°î½î»î€ˆèˆ¦ç¾˜îš½</font></strong></td>
         </tr>
         <tr> 
           <td bgcolor="#FFFFFF"> <table width="100%" border="0" align="center" cellpadding="3" cellspacing="1">
               <tr> 
-                <td><strong>¦pªG±z·Q¨Ï¥Î¥»¨t²Î(§Y¡G«Ò°ê³Æ¥÷¤ı)¡A½Ğ¸Ô²Ó¾\Åª¥H¤U±ø´Ú¡A¥u¦³¦b±µ¨ü¤F¥H¤U±ø´Úªº±¡ªp¤U±z¤~¥i¥H¨Ï¥Î¥»¨t²Î¡G</strong></td>
+                <td><strong>î›–ç‹¦çœ¤ç¨±ã„ãƒã‚»â•°å‚(îœŸî“î‚ç“£ç§°î½î»)î“‡å«å†ˆç¿ç¶·å¼„î™î—»å…µè¹¿î“‡î™»Î¤î›ˆé’¡îŸŸî—¬î™î—»å…µè¹¿î€™è–„çŒµî—»çœ¤î˜¤î™¯î™ã„ãƒã‚»â•°å‚î“</strong></td>
               </tr>
               <tr> 
-                <td>1¡B¥»µ{§Ç¬°§K¶O¥N½X,´£¨Ñ­Ó¤Hºô¯¸§K¶O¨Ï¥Î¡A½Ğ¤Å«Dªk­×§ï¡BÂà¸ü¡B´²¼½¡B©Î¥Î©ó¨ä¥L¹Ï§Q¦æ¬°¡A¨Ã½Ğ¤Å§R°£ª©ÅvÁn©ú¡C</td>
+                <td>1î“ˆã‚»ç¥˜î¥îƒ‹îœ‘ç¦£î™”çµ,çŸ—ã„‘î…Œî—®å‘¼î‡­îœ‘ç¦£ã„ãƒî“‡å«ã¥ç¶çŒ­î…Ñî“ˆé”£æ›´î“ˆåºŠå†€î“ˆâ”ªãƒî „ã„¤î™’ç“œîœ—ï¸½îƒ‹î“‡îŸ‹å«ã¥îœ˜åŸƒî€ˆèˆ¦ç¾˜î ‹î“‰</td>
               </tr>
               <tr> 
-                <td>2¡B¥»µ{§Ç¬°§K¶O¥N½X,¥Î¤á¦Û¥Ñ¿ï¾Ü¬O§_¨Ï¥Î¡A¦b¨Ï¥Î¤¤¥X²{¥ô¦ó°İÃD¦Ó³y¦¨ªº·l¥¢<strong><a href="http://www.phome.net" target="_blank">«Ò°ê³n¥ó</a></strong>¤£­t¥ô¦ó³d¥ô¡C 
+                <td>2î“ˆã‚»ç¥˜î¥îƒ‹îœ‘ç¦£î™”çµ,ãƒã‚îãƒ‘åŒ¡æ‹’çŒîœ¥ã„ãƒî“‡î›ˆã„ãƒã„î™ç·ãƒ´î–æ‹œè‚ˆÏ„ç¡‘Î˜î€™ç©•ã‚¢<strong><a href="http://www.phome.net" target="_blank">î‚ç“£ç¡ãƒ³</a></strong>ãƒç’½ãƒ´î–ç «ãƒ´î“‰ 
                 </td>
               </tr>
               <tr> 
-                <td>3¡B¥»µ{§Ç¤£¤¹³\¦b¨S¦³¨Æ¥ı³qª¾ªº±¡ªp¤U¥Î©ó°Ó·~¥Î³~¡A°²¦p±z»İ­n¥Î©ó°Ó·~¥Î³~¡A½Ğ©M<a href="http://www.phome.net" target="_blank"><u>§Ú­ÌÁpÃ´</u></a>¡A¥HÀò±o°Ó·~¨Ï¥ÎÅv¡C 
+                <td>3î“ˆã‚»ç¥˜î¥ãƒã™ç ›î›ˆâŠ¿Î¤ã„†îƒç¡„î€î€™è–„çŒµî—»ãƒî „åç©¨ãƒç¡šî“‡å®‰î›–çœ¤æƒ ç’¶ãƒî „åç©¨ãƒç¡šî“‡å«ã<a href="http://www.phome.net" target="_blank"><u>Ğ¸î……ç¾›ä¹ˆ</u></a>î“‡î™è‰çœ”åç©¨ã„ãƒèˆ¦î“‰ 
                 </td>
               </tr>
               <tr> 
-                <td>4¡B¦pªG¹H¤Ï¥H¤W±ø´Ú¡A<strong><a href="http://www.phome.net" target="_blank">«Ò°ê³n¥ó</a></strong>¹ï¦¹«O¯d¤@¤Áªk«ß°l¨sªºÅv§Q¡C</td>
+                <td>4î“ˆî›–ç‹¦ç¬»ã¯î™î—½å…µè¹¿î“‡<strong><a href="http://www.phome.net" target="_blank">î‚ç“£ç¡ãƒ³</a></strong>ç™¸î…ç‚ç—™î—¦ã¡çŒ­î‚œç™¼â•¯î€™èˆ¦îœ—î“‰</td>
               </tr>
             </table></td>
         </tr>
@@ -124,43 +124,43 @@ function GetPhpSafemod()
           <td height="25"><strong><a href="phpinfo.php" target="_blank"></a></strong> 
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
               <tr>
-                <td width="50%" height="16"><strong><a href="phpinfo.php" target="_blank"><font color="#FFFFFF">¨t²Î«H®§</font></a></strong></td>
-                <td><div align="right"><strong><a href="http://www.dotool.cn" target="_blank"><font color="#FFFFFF">¯¸ªø¤u¨ã</font></a></strong></div></td>
+                <td width="50%" height="16"><strong><a href="phpinfo.php" target="_blank"><font color="#FFFFFF">â•°å‚çºî…¾</font></a></strong></td>
+                <td><div align="right"><strong><a href="http://www.dotool.cn" target="_blank"><font color="#FFFFFF">î‡­î—î˜›ã„£</font></a></strong></div></td>
               </tr>
             </table></td>
         </tr>
         <tr> 
           <td bgcolor="#FFFFFF"><table width="100%" border="0" cellpadding="3" cellspacing="1" bgcolor="#DBEAF5">
               <tr bgcolor="#FFFFFF"> 
-                <td height="26">ªA°È¾¹³n¥ó: 
+                <td height="26">ç‹å­ç«Ÿç¡ãƒ³: 
                   <?=$_SERVER['SERVER_SOFTWARE']?>
                 </td>
-                <td height="26">¾Ş§@¨t²Î&nbsp;&nbsp;:
+                <td height="26">å·¨îœ†â•°å‚&nbsp;&nbsp;:
 				<? echo GetUseSys();?></td>
               </tr>
               <tr bgcolor="#FFFFFF"> 
-                <td width="50%" height="25">PHPª©¥»&nbsp;&nbsp; : <? echo PHP_VERSION;?></td>
-                <td height="25">MYSQLª©¥»&nbsp;:
+                <td width="50%" height="25">PHPî€ˆã‚»&nbsp;&nbsp; : <? echo PHP_VERSION;?></td>
+                <td height="25">MYSQLî€ˆã‚»&nbsp;:
 				<? echo @mysql_get_server_info();?></td>
               </tr>
               <tr bgcolor="#FFFFFF"> 
-                <td height="25">¥ş§½ÅÜ¶q&nbsp;&nbsp;: 
+                <td height="25">î„Ğ«è·‘ç§–&nbsp;&nbsp;: 
                   <?=$onoff?>
                 </td>
-                <td height="25">¤W¶Ç¤å¥ó&nbsp;&nbsp;: 
+                <td height="25">î—½è‚šã‚…ãƒ³&nbsp;&nbsp;: 
                   <?=$upload?>
                 </td>
               </tr>
               <tr bgcolor="#FFFFFF"> 
-                <td height="25">µn¿ıªÌIP&nbsp;&nbsp;:
+                <td height="25">ç¥…é­î€«IP&nbsp;&nbsp;:
 				<? echo $_SERVER['REMOTE_ADDR'];?></td>
-                <td height="25">·í«e®É¶¡&nbsp;&nbsp;:
+                <td height="25">è®½ç¡î† ä¸&nbsp;&nbsp;:
 				<? echo date("Y-m-d H:i:s");?></td>
               </tr>
               <tr bgcolor="#FFFFFF"> 
-                <td height="25">µ{§Çª©¥»&nbsp;&nbsp;: <a href="http://www.phome.net" target="_blank"><strong><font color="#07519A">EmpireBak</font></strong> 
-                  <font color="#FF9900"><strong>v2010</strong></font></a> <font color="#666666">[¶}·½ª©]</font></td>
-                <td height="25">¦w¥ş¼Ò¦¡&nbsp;&nbsp;: 
+                <td height="25">ç¥˜î¥î€ˆã‚»&nbsp;&nbsp;: <a href="http://www.phome.net" target="_blank"><strong><font color="#07519A">EmpireBak</font></strong> 
+                  <font color="#FF9900"><strong>v2010</strong></font></a> <font color="#666666">[ç§¨æ–¹î€ˆ]</font></td>
+                <td height="25">î›î„å®¶Î‘&nbsp;&nbsp;: 
                   <?=GetPhpSafemod()?>
                 </td>
               </tr>
@@ -174,21 +174,21 @@ function GetPhpSafemod()
   <tr> 
     <td><table width="98%" border="0" align="center" cellpadding="3" cellspacing="1" bgcolor="#0472BC">
         <tr> 
-          <td height="25" colspan="2"><strong><font color="#FFFFFF">µ{§Ç¨ä¥¦¬ÛÃö«H®§</font></strong></td>
+          <td height="25" colspan="2"><strong><font color="#FFFFFF">ç¥˜î¥ã„¤ã‚¦îƒ¶é—½çºî…¾</font></strong></td>
         </tr>
         <tr> 
           <td bgcolor="#FFFFFF"><table width="100%" border="0" cellpadding="3" cellspacing="1">
               <tr bgcolor="#FFFFFF"> 
-                <td width="50%" height="25">©x¤è¥D­¶: <a href="http://www.phome.net" target="_blank">http://www.phome.net</a></td>
+                <td width="50%" height="25">ï¹›ã‚ˆî™Šî„¯: <a href="http://www.phome.net" target="_blank">http://www.phome.net</a></td>
               </tr>
               <tr bgcolor="#FFFFFF"> 
-                <td height="25">©x¤è½×¾Â: <a href="http://bbs.phome.net" target="_blank">http://bbs.phome.net</a></td>
+                <td height="25">ï¹›ã‚ˆé˜¶éŸ­: <a href="http://bbs.phome.net" target="_blank">http://bbs.phome.net</a></td>
               </tr>
               <tr bgcolor="#FFFFFF"> 
-                <td height="25">¤½¥qºô¯¸¡G<a href="http://www.digod.com" target="_blank">http://www.digod.com</a></td>
+                <td height="25">ãî™·å‘¼î‡­î“<a href="http://www.digod.com" target="_blank">http://www.digod.com</a></td>
               </tr>
               <tr bgcolor="#FFFFFF"> 
-                <td height="25">«Ò°ê²£«~¡G<a href="http://www.phome.net/product" target="_blank">http://www.phome.net/product</a></td>
+                <td height="25">î‚ç“£ç»ç‡î“<a href="http://www.phome.net/product" target="_blank">http://www.phome.net/product</a></td>
               </tr>
             </table></td>
           <td width="60%" height="125" valign="top" bgcolor="#FFFFFF">

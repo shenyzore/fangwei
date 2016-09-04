@@ -7,13 +7,13 @@ if(!defined('InEmpireBak'))
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=big5">
-<title>¿ï¾Ü¼Æ¾Ú®w</title>
+<title>åŒ¡æ‹’è®¡æ²®ç•</title>
 <link href="images/css.css" rel="stylesheet" type="text/css">
 <script>
 function DoDrop(dbname)
 {
 	var ok;
-	ok=confirm("½T»{­n§R°£¦¹¼Æ¾Ú®w?");
+	ok=confirm("çµ‹ç²„ç’¶îœ˜åŸƒî…è®¡æ²®ç•?");
 	if(ok)
 	{
 		self.location.href='phome.php?phome=DropDb&mydbname='+dbname;
@@ -25,20 +25,20 @@ function DoDrop(dbname)
 <body>
 <table width="100%" border="0" align="center" cellpadding="3" cellspacing="1">
   <tr> 
-    <td>¦ì¸m¡G³Æ¥÷¼Æ¾Ú -&gt; <a href="ChangeDb.php">¿ï¾Ü¼Æ¾Ú®w</a></td>
+    <td>î”ç«šî“ç§°î½è®¡æ²® -&gt; <a href="ChangeDb.php">åŒ¡æ‹’è®¡æ²®ç•</a></td>
   </tr>
   <tr>
-    <td height="25"><div align="center">³Æ¥÷¨BÆJ¡G<font color="#FF0000">¿ï¾Ü¼Æ¾Ú®w</font> 
-        -&gt; ¿ï¾Ü­n³Æ¥÷ªºªí -&gt; ¶}©l³Æ¥÷ -&gt; §¹¦¨</div></td>
+    <td height="25"><div align="center">ç§°î½Ë™è‰¼î“<font color="#FF0000">åŒ¡æ‹’è®¡æ²®ç•</font> 
+        -&gt; åŒ¡æ‹’ç’¶ç§°î½î€™îŒ -&gt; ç§¨ï¹ç§°î½ -&gt; Ğ§Î˜</div></td>
   </tr>
 </table>
 <br>
 <table width="100%" border="0" align="center" cellpadding="3" cellspacing="1">
   <tr bgcolor="#0472BC"> 
     <td width="56%" height="25" bgcolor="#0472BC"> 
-      <div align="center"><strong><font color="#FFFFFF">¼Æ¾Ú®w¦W</font></strong></div></td>
+      <div align="center"><strong><font color="#FFFFFF">è®¡æ²®ç•îš½</font></strong></div></td>
     <td width="44%" height="25"> 
-      <div align="center"><strong><font color="#FFFFFF">³Æ¥÷</font></strong></div></td>
+      <div align="center"><strong><font color="#FFFFFF">ç§°î½</font></strong></div></td>
   </tr>
   <?php
   $i=0;
@@ -59,9 +59,9 @@ function DoDrop(dbname)
       <div align="center"><?=$r[0]?></div></td>
     <td height="25"> 
       <div align="center"> 
-        <input type="button" name="Submit" value="³Æ¥÷¼Æ¾Ú" onclick="self.location.href='ChangeTable.php?mydbname=<?=$r[0]?>';">
-        &nbsp;&nbsp;&nbsp;<input type="button" name="Submit" value="°õ¦æSQL" onclick="self.location.href='DoSql.php?mydbname=<?=$r[0]?>';">
-		&nbsp;&nbsp;&nbsp;<input type="button" name="Submit3" value="§R°£¼Æ¾Ú®w" onclick="javascript:DoDrop('<?=$r[0]?>')">
+        <input type="button" name="Submit" value="ç§°î½è®¡æ²®" onclick="self.location.href='ChangeTable.php?mydbname=<?=$r[0]?>';">
+        &nbsp;&nbsp;&nbsp;<input type="button" name="Submit" value="ç£…ï¸½SQL" onclick="self.location.href='DoSql.php?mydbname=<?=$r[0]?>';">
+		&nbsp;&nbsp;&nbsp;<input type="button" name="Submit3" value="îœ˜åŸƒè®¡æ²®ç•" onclick="javascript:DoDrop('<?=$r[0]?>')">
       </div></td>
   </tr>
   <?
@@ -71,20 +71,20 @@ function DoDrop(dbname)
     <td height="25" colspan="2"><form name="form1" method="post" action="phome.php">
         <table width="100%" border="0" align="center" cellpadding="3" cellspacing="1" bgcolor="#0472BC">
           <tr> 
-            <td height="25"><strong><font color="#FFFFFF">«Ø¥ß¼Æ¾Ú®w
+            <td height="25"><strong><font color="#FFFFFF">î‚•ãƒŸè®¡æ²®ç•
               <input name="phome" type="hidden" id="phome" value="CreateDb">
               </font></strong></td>
           </tr>
           <tr> 
-            <td bgcolor="#FFFFFF">¼Æ¾Ú®w¦W¡G 
+            <td bgcolor="#FFFFFF">è®¡æ²®ç•îš½î“ 
               <input name="mydbname" type="text" id="mydbname">
               <select name="mydbchar" id="mydbchar">
-                <option value="">Àq»{½s½X</option>
+                <option value="">çºç²„çµªçµ</option>
                 <?php
 				echo Ebak_ReturnDbCharList('');
 				?>
               </select>
-              <input type="submit" name="Submit2" value="«Ø¥ß">
+              <input type="submit" name="Submit2" value="î‚•ãƒŸ">
             </td>
           </tr>
         </table>

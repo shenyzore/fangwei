@@ -3,22 +3,22 @@ if(!defined('InEmpireBak'))
 {
 	exit();
 }
-$onclickword='(µã»÷×ªÏò±¸·İÊı¾İ)';
+$onclickword='(ç‚¹å‡»è½¬å‘å¤‡ä»½æ•°æ®)';
 $change=(int)$_GET['change'];
 if($change==1)
 {
-	$onclickword='(µã»÷Ñ¡Ôñ)';
+	$onclickword='(ç‚¹å‡»é€‰æ‹©)';
 }
 ?>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<title>¹ÜÀí±¸·İ±£´æÉèÖÃ</title>
+<title>ç®¡ç†å¤‡ä»½ä¿å­˜è®¾ç½®</title>
 <link href="images/css.css" rel="stylesheet" type="text/css">
 <script>
 function ChangeSet(filename)
 {
-	var ok=confirm("È·ÈÏÒªµ¼Èë?");
+	var ok=confirm("ç¡®è®¤è¦å¯¼å…¥?");
 	if(ok)
 	{
 		opener.parent.ebakmain.location.href='ChangeTable.php?mydbname=<?=$mydbname?>&savefilename='+filename;
@@ -31,14 +31,14 @@ function ChangeSet(filename)
 <body>
 <table width="100%" border="0" align="center" cellpadding="3" cellspacing="1">
   <tr> 
-    <td>Î»ÖÃ£º<a href="ListSetbak.php">¹ÜÀí±¸·İÉèÖÃ</a>&nbsp;(´æ·ÅÄ¿Â¼£º<b>setsave</b>)</td>
+    <td>ä½ç½®ï¼š<a href="ListSetbak.php">ç®¡ç†å¤‡ä»½è®¾ç½®</a>&nbsp;(å­˜æ”¾ç›®å½•ï¼š<b>setsave</b>)</td>
   </tr>
 </table>
 <br>
 <table width="500" border="0" align="center" cellpadding="3" cellspacing="1">
   <tr bgcolor="#0472BC"> 
-    <td width="63%" height="25" bgcolor="#0472BC"> <div align="center"><strong><font color="#FFFFFF">±£´æÉèÖÃÎÄ¼şÃû<?=$onclickword?></font></strong></div></td>
-    <td width="37%"><div align="center"><font color="#FFFFFF">²Ù×÷</font></div></td>
+    <td width="63%" height="25" bgcolor="#0472BC"> <div align="center"><strong><font color="#FFFFFF">ä¿å­˜è®¾ç½®æ–‡ä»¶å<?=$onclickword?></font></strong></div></td>
+    <td width="37%"><div align="center"><font color="#FFFFFF">æ“ä½œ</font></div></td>
   </tr>
   <?php
   while($file=@readdir($hand))
@@ -53,18 +53,18 @@ function ChangeSet(filename)
 		{
 			$showfile="<a href='phome.php?phome=SetGotoBak&savename=$file' title='$file'>$file</a>";
 		}
-		//Ä¬ÈÏÉèÖÃ
+		//é»˜è®¤è®¾ç½®
 		if($file=='def')
 		{
 			if(empty($change))
 			{
 				$showfile=$file;
 			}
-			$showdel="<b>Ä¬ÈÏÉèÖÃ</b>";
+			$showdel="<b>é»˜è®¤è®¾ç½®</b>";
 		}
 		else
 		{
-			$showdel="<a href=\"phome.php?phome=DoDelSave&mydbname=$mydbname&change=$change&savename=$file\" onclick=\"return confirm('È·ÈÏÒªÉ¾³ı£¿');\">É¾³ıÉèÖÃ</a>";
+			$showdel="<a href=\"phome.php?phome=DoDelSave&mydbname=$mydbname&change=$change&savename=$file\" onclick=\"return confirm('ç¡®è®¤è¦åˆ é™¤ï¼Ÿ');\">åˆ é™¤è®¾ç½®</a>";
 		}
   ?>
   <tr bgcolor="#DBEAF5"> 

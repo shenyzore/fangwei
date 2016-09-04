@@ -4,7 +4,7 @@ require('class/functions.php');
 $lur=islogin();
 $loginin=$lur['username'];
 $rnd=$lur['rnd'];
-//µÚÒ»´ÎÊ¹ÓÃ
+//ç¬¬ä¸€æ¬¡ä½¿ç”¨
 if(empty($phome_db_ver))
 {
 	printerror("FirstUseMsg","SetDb.php");

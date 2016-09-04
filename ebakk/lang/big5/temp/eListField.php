@@ -7,7 +7,7 @@ if(!defined('InEmpireBak'))
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=big5">
-<title>ªí¦r¬q¦Cªí</title>
+<title>îŒî›˜ç¿îš©îŒ</title>
 <link href="images/css.css" rel="stylesheet" type="text/css">
 <script>
 function ChangeAutoField(f)
@@ -34,26 +34,26 @@ function ChangeAutoField(f)
 <body>
 <table width="100%" border="0" align="center" cellpadding="3" cellspacing="1">
   <tr> 
-    <td>¦ì¸m¡G<b>
+    <td>î”ç«šî“<b>
       <?=$mydbname?>
       .
       <?=$mytbname?>
-      </b> ¦r¬q¦Cªí&nbsp;<font color="#666666">(ÂIÀ»¦r¬q¦W¥i¡u¥[¤J¥h°£¦Û¼W­È¦r¬q¦Cªí¡v)</font></td>
+      </b> î›˜ç¿îš©îŒ&nbsp;<font color="#666666">(ç¿´é˜‘î›˜ç¿îš½î™¯î“»î™¡î—°î™®åŸƒîç³¤î…î›˜ç¿îš©îŒî“¼)</font></td>
   </tr>
 </table>
 <br>
 <table width="100%" border="0" cellpadding="3" cellspacing="1" bgcolor="#0472BC">
   <tr> 
-    <td height="27"> <div align="center"><font color="#FFFFFF">¦r¬q¦W</font></div></td>
-    <td><div align="center"><font color="#FFFFFF">¦r¬qÃş«¬</font></div></td>
-    <td><div align="center"><font color="#FFFFFF">¦r¬qÄİ©Ê</font></div></td>
-    <td><div align="center"><font color="#FFFFFF">Àq»{­È</font></div></td>
-    <td><div align="center"><font color="#FFFFFF">ªş¥[Äİ©Ê</font></div></td>
+    <td height="27"> <div align="center"><font color="#FFFFFF">î›˜ç¿îš½</font></div></td>
+    <td><div align="center"><font color="#FFFFFF">î›˜ç¿æ‘¸î©</font></div></td>
+    <td><div align="center"><font color="#FFFFFF">î›˜ç¿å¦®â”¦</font></div></td>
+    <td><div align="center"><font color="#FFFFFF">çºç²„î…</font></div></td>
+    <td><div align="center"><font color="#FFFFFF">îî™¡å¦®â”¦</font></div></td>
   </tr>
   <?php
   while($r=$empire->fetch($sql))
   {
-	$r[Field]="<a href='#ebak' onclick=\"ChangeAutoField('".$r[Field]."');\" title='¥[¤J¥h°£¦Û¼W­È¦r¬q¦Cªí'>$r[Field]</a>";
+	$r[Field]="<a href='#ebak' onclick=\"ChangeAutoField('".$r[Field]."');\" title='î™¡î—°î™®åŸƒîç³¤î…î›˜ç¿îš©îŒ'>$r[Field]</a>";
   ?>
   <tr bgcolor="#FFFFFF"> 
     <td height="27"> <div align="center">

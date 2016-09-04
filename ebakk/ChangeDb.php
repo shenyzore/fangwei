@@ -8,7 +8,7 @@ $loginin=$lur['username'];
 $rnd=$lur['rnd'];
 $link=db_connect();
 $empire=new mysqlquery();
-//Ä¬ÈÏÊı¾İ¿â
+//é»˜è®¤æ•°æ®åº“
 if(!empty($phome_db_dbname))
 {
 	echo $fun_r['GotoDefaultDb']."<script>self.location.href='ChangeTable.php?mydbname=".$phome_db_dbname."'</script>";

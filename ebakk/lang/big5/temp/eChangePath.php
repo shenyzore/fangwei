@@ -3,17 +3,17 @@ if(!defined('InEmpireBak'))
 {
 	exit();
 }
-$onclickword='(ÂIÀ»Âà¦V«ì´_¼Æ¾Ú)';
+$onclickword='(ç¿´é˜‘é”£îš¼î‚©ç¢ºè®¡æ²®)';
 $change=(int)$_GET['change'];
 if($change==1)
 {
-	$onclickword='(ÂIÀ»¿ï¾Ü)';
+	$onclickword='(ç¿´é˜‘åŒ¡æ‹’)';
 }
 ?>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=big5">
-<title>ºŞ²z³Æ¥÷¥Ø¿ı</title>
+<title>æ¨ç¶ç§°î½ãƒ˜é­</title>
 <link href="images/css.css" rel="stylesheet" type="text/css">
 <script>
 function ChangePath(pathname)
@@ -27,15 +27,15 @@ function ChangePath(pathname)
 <body>
 <table width="100%" border="0" align="center" cellpadding="3" cellspacing="1">
   <tr> 
-    <td>¦ì¸m¡G<a href="ChangePath.php">ºŞ²z³Æ¥÷¥Ø¿ı</a>&nbsp;(¦s©ñ¥Ø¿ı¡G<b><?=$bakpath?></b>)</td>
+    <td>î”ç«šî“<a href="ChangePath.php">æ¨ç¶ç§°î½ãƒ˜é­</a>&nbsp;(î›™î ‚ãƒ˜é­î“<b><?=$bakpath?></b>)</td>
   </tr>
 </table>
 <br>
 <table width="100%" border="0" align="center" cellpadding="3" cellspacing="1">
   <tr bgcolor="#0472BC"> 
-    <td width="42%" height="25" bgcolor="#0472BC"> <div align="center"><strong><font color="#FFFFFF">³Æ¥÷¥Ø¿ı¦W<?=$onclickword?></font></strong></div></td>
-    <td width="16%" height="25"> <div align="center"><strong><font color="#FFFFFF">¬d¬İ»¡©ú¤å¥ó</font></strong></div></td>
-    <td width="42%"><div align="center"><font color="#FFFFFF">¾Ş§@</font></div></td>
+    <td width="42%" height="25" bgcolor="#0472BC"> <div align="center"><strong><font color="#FFFFFF">ç§°î½ãƒ˜é­îš½<?=$onclickword?></font></strong></div></td>
+    <td width="16%" height="25"> <div align="center"><strong><font color="#FFFFFF">ç©îƒ¸å¼§î ‹ã‚…ãƒ³</font></strong></div></td>
+    <td width="42%"><div align="center"><font color="#FFFFFF">å·¨îœ†</font></div></td>
   </tr>
   <?php
   while($file=@readdir($hand))
@@ -54,15 +54,15 @@ function ChangePath(pathname)
   <tr bgcolor="#DBEAF5"> 
     <td height="25"> <div align="left"><img src="images/dir.gif" width="19" height="15">&nbsp; 
         <?=$showfile?> </div></td>
-    <td height="25"> <div align="center"> [<a href="<? echo $bakpath."/".$file."/readme.txt"?>" target=_blank>¬d¬İ³Æ¥÷»¡©ú</a>]</div></td>
-    <td><div align="center">[<a href="#ebak" onclick="window.open('phome.php?phome=DoZip&p=<?=$file?>&change=<?=$change?>','','width=350,height=160');">¥´¥]¨Ã¤U¸ü</a>]&nbsp;&nbsp;[<a href="RepFiletext.php?mypath=<?=$file?>">´À´«¤å¥ó¤º®e</a>]&nbsp;&nbsp;[<a href="phome.php?phome=DelBakpath&path=<?=$file?>&change=<?=$change?>" onclick="return confirm('½T»{­n§R°£¡H');">§R°£¥Ø¿ı</a>]</div></td>
+    <td height="25"> <div align="center"> [<a href="<? echo $bakpath."/".$file."/readme.txt"?>" target=_blank>ç©îƒ¸ç§°î½å¼§î ‹</a>]</div></td>
+    <td><div align="center">[<a href="#ebak" onclick="window.open('phome.php?phome=DoZip&p=<?=$file?>&change=<?=$change?>','','width=350,height=160');">ã‚´î™£îŸ‹î—»æ›´</a>]&nbsp;&nbsp;[<a href="RepFiletext.php?mypath=<?=$file?>">è ¢ä¼ ã‚…ãƒ³ãšç”§</a>]&nbsp;&nbsp;[<a href="phome.php?phome=DelBakpath&path=<?=$file?>&change=<?=$change?>" onclick="return confirm('çµ‹ç²„ç’¶îœ˜åŸƒî“');">îœ˜åŸƒãƒ˜é­</a>]</div></td>
   </tr>
   <?
      }
   }
   ?>
   <tr> 
-    <td height="25" colspan="3"><font color="#666666">(»¡©ú¡G¦pªG³Æ¥÷¥Ø¿ı¤å¥ó¸û¦h«ØÄ³ª½±µ±qFTP¤U¸ü³Æ¥÷¥Ø¿ı¡C)</font></td>
+    <td height="25" colspan="3"><font color="#666666">(å¼§î ‹î“î›–ç‹¦ç§°î½ãƒ˜é­ã‚…ãƒ³è€•î›î‚•æŸî€œé’¡çœ–FTPî—»æ›´ç§°î½ãƒ˜é­î“‰)</font></td>
   </tr>
 </table>
 </body>

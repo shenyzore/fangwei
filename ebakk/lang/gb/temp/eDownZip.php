@@ -7,28 +7,28 @@ if(!defined('InEmpireBak'))
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<title>обтья╧кУ╟Э</title>
+<title>Д╦▀Х╫╫Е▌▀Г╪╘Е▄┘</title>
 <link href="images/css.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 <table width="100%" border="0" align="center" cellpadding="3" cellspacing="1" bgcolor="#0472BC">
   <tr> 
-    <td height="30"> <div align="center"><strong><font color="#FFFFFF">обтья╧кУ╟Э(д©б╪ё╨ 
+    <td height="30"> <div align="center"><strong><font color="#FFFFFF">Д╦▀Х╫╫Е▌▀Г╪╘Е▄┘(Г⌡╝Е╫∙О╪  
         <?=$p?>
         )</font></strong></div></td>
   </tr>
   <tr> 
     <td height="30" bgcolor="#FFFFFF"> 
-      <div align="center">[<a href="<?=$file?>">обтья╧кУ╟Э</a>]</div></td>
+      <div align="center">[<a href="<?=$file?>">Д╦▀Х╫╫Е▌▀Г╪╘Е▄┘</a>]</div></td>
   </tr>
   <tr> 
     <td height="30" bgcolor="#FFFFFF"> 
-      <div align="center">[<a href="phome.php?f=<?=$f?>&phome=DelZip" onclick="return confirm('х╥хор╙и╬ЁЩё©');">и╬ЁЩя╧кУ╟Э</a>]</div></td>
+      <div align="center">[<a href="phome.php?f=<?=$f?>&phome=DelZip" onclick="return confirm('Г║╝Х╝╓Х╕│Е┬═И≥╓О╪÷');">Е┬═И≥╓Е▌▀Г╪╘Е▄┘</a>]</div></td>
   </tr>
   <tr>
     <td height="30" bgcolor="#FFFFFF">
-<div align="center">ё╗<font color="#FF0000">к╣цВё╨╟╡х╚фП╪Шё╛обтьмЙ╠огКбМиои╬ЁЩя╧кУ╟Эё╝</font>ё╘</div></td>
+<div align="center">О╪┬<font color="#FF0000">Х╞╢Ф≤▌О╪ Е╝┴Е┘╗Х╣╥Х╖│О╪▄Д╦▀Х╫╫Е╝▄Ф╞∙Х╞╥И╘╛Д╦┼Е┬═И≥╓Е▌▀Г╪╘Е▄┘О╪▌</font>О╪┴</div></td>
   </tr>
 </table>
 </body>

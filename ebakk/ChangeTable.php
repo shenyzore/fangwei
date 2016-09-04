@@ -12,15 +12,15 @@ if(empty($mydbname))
 {
 	printerror("NotChangeDb","history.go(-1)");
 }
-//Ñ¡ÔñÊı¾İ¿â
+//é€‰æ‹©æ•°æ®åº“
 $udb=$empire->query("use `".$mydbname."`");
-//´æ·ÅÄ¿Â¼
+//å­˜æ”¾ç›®å½•
 $mypath=$mydbname."_".date("YmdHis");
 if($phpsafemod)
 {
 	$mypath="safemod";
 }
-//µ¼ÈëÉèÖÃ
+//å¯¼å…¥è®¾ç½®
 $loadfile=RepPostVar($_GET['savefilename']);
 if(strstr($loadfile,'.')||strstr($loadfile,'/')||strstr($loadfile,"\\"))
 {
@@ -36,7 +36,7 @@ if($dmypath)
 {
 	$mypath=$dmypath;
 }
-//²éÑ¯
+//æŸ¥è¯¢
 $keyboard=RepPostVar($_GET['keyboard']);
 if(empty($keyboard))
 {

@@ -7,8 +7,8 @@ if(!defined('InEmpireBak'))
 <HTML>
 <HEAD>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<title>»¶Ó­Ê¹ÓÃµÛ¹ú±¸·İÍõ</title>
-<base onmouseover="window.status='µÛ¹ú±¸·İÍõ';return true">
+<title>æ¬¢è¿ä½¿ç”¨å¸å›½å¤‡ä»½ç‹</title>
+<base onmouseover="window.status='å¸å›½å¤‡ä»½ç‹';return true">
 <link href="images/css.css" rel="stylesheet" type="text/css">
 <SCRIPT>
 function switchSysBar(){
@@ -31,12 +31,12 @@ document.all("frmTitle").style.display=""
           <TBODY>
             <tr> 
               <TD onclick="switchSysBar()" style="HEIGHT:100%;"> <font style="COLOR:666666;CURSOR:hand;FONT-FAMILY:Webdings;FONT-SIZE:9pt;"> 
-                <SPAN id="switchPoint" title="´ò¿ª/¹Ø±Õ×ó±ßµ¼º½À¸">3</SPAN></font> 
+                <SPAN id="switchPoint" title="æ‰“å¼€/å…³é—­å·¦è¾¹å¯¼èˆªæ ">3</SPAN></font> 
           </TBODY>
         </TABLE></TD>
       <TD style=WIDTH:100%> <table border=0 cellPadding=0 cellSpacing=0 height="100%" width="100%">
           <tr height=30 bgcolor="C7D4F7"> 
-            <td width="73%" bgcolor="C7D4F7"><strong>»¶Ó­Ê¹ÓÃµÛ¹ú±¸·İÍõ [<a href="http://www.phome.net/" target="_blank">¹Ù·½Õ¾</a>]</strong></td>
+            <td width="73%" bgcolor="C7D4F7"><strong>æ¬¢è¿ä½¿ç”¨å¸å›½å¤‡ä»½ç‹ [<a href="http://www.phome.net/" target="_blank">å®˜æ–¹ç«™</a>]</strong></td>
             <td width="27%" bgcolor="C7D4F7"> 
               <select name="select" onchange="parent.location.href='phome.php?phome=ChangeLanguage&from=admin.php&l='+this.value;" style="width:300">
 			<?=Ebak_ReturnLang()?>

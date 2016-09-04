@@ -8,10 +8,10 @@ if(!defined('InEmpireBak'))
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<title>信息提示</title>
+<title>淇℃伅鎻愮ず</title>
 <link href="<?=$a?>images/css.css" rel="stylesheet" type="text/css">
 <SCRIPT language=javascript>
-var secs=3;//3秒
+var secs=3;//3绉�
 for(i=1;i<=secs;i++) 
 { window.setTimeout("update(" + i + ")", i * 1000);} 
 function update(num) 
@@ -33,7 +33,7 @@ else
 <br>
 <table width="500" border="0" align="center" cellpadding="3" cellspacing="1" bgcolor="#0472BC">
   <tr> 
-    <td height="25"><div align="center"><strong><font color="#FFFFFF">信息提示</font></strong></div></td>
+    <td height="25"><div align="center"><strong><font color="#FFFFFF">淇℃伅鎻愮ず</font></strong></div></td>
   </tr>
   <tr bgcolor="#FFFFFF"> 
     <td height="80"> 
@@ -41,7 +41,7 @@ else
 	  <br>
         <b><?=$error?></b>
         <br>
-        <br><a href="<?=$gotourl?>">如果您的浏览器没有自动跳转，请点击这里</a>
+        <br><a href="<?=$gotourl?>">濡傛灉鎮ㄧ殑娴忚鍣ㄦ病鏈夎嚜鍔ㄨ烦杞紝璇风偣鍑昏繖閲�</a>
 <br><br>
 	  </div></td>
   </tr>

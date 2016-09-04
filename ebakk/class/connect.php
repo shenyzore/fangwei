@@ -9,7 +9,7 @@ $editor=0;
 require_once EBAK_PATH.'lang/dbchar.php';
 require_once EBAK_PATH.'class/config.php';
 
-//³¬Ê±ÉèÖÃ
+//è¶…æ—¶è®¾ç½®
 if($php_outtime)
 {
 	$php_outtime=(int)$php_outtime;
@@ -19,7 +19,7 @@ if($php_outtime)
 function db_connect(){
 	global $phome_db_server,$phome_db_username,$phome_db_password,$phome_db_dbname,$phome_db_port,$phome_db_char,$phome_db_ver,$editor,$fun_r;
 	$dblocalhost=$phome_db_server;
-	//¶Ë¿Ú
+	//ç«¯å£
 	if($phome_db_port)
 	{
 		$dblocalhost.=":".$phome_db_port;
@@ -39,7 +39,7 @@ function db_connect(){
 		echo $fun_r['ConntConnectDb'];
 		exit();
 	}
-	//±àÂë
+	//ç¼–ç 
 	DoSetDbChar($phome_db_char);
 	if($phome_db_ver>='5.0')
 	{
@@ -48,7 +48,7 @@ function db_connect(){
 	return $link;
 }
 
-//ÉèÖÃ±àÂë
+//è®¾ç½®ç¼–ç 
 function DoSetDbChar($dbchar){
 	if($dbchar&&$dbchar!='auto')
 	{
@@ -62,14 +62,14 @@ function db_close(){
 	@mysql_close($link);
 }
 
-//È¡µÃmysql°æ±¾(Êı¾İ¿â)
+//å–å¾—mysqlç‰ˆæœ¬(æ•°æ®åº“)
 function Ebak_GetMysqlVerForDb(){
 	$sql=mysql_query("select version() as version");
 	$r=mysql_fetch_array($sql);
 	return Ebak_ReturnMysqlVer($r['version']);
 }
 
-//·µ»Ømysql°æ±¾
+//è¿”å›mysqlç‰ˆæœ¬
 function Ebak_ReturnMysqlVer($dbver){
 	if(empty($dbver))
 	{
@@ -94,26 +94,26 @@ function Ebak_ReturnMysqlVer($dbver){
 	return $dbver;
 }
 
-//ÉèÖÃCOOKIE
+//è®¾ç½®COOKIE
 function esetcookie($var,$val,$life=0){
 	global $phome_cookiedomain,$phome_cookiepath,$phome_cookievarpre;
 	return setcookie($phome_cookievarpre.$var,$val,$life,$phome_cookiepath,$phome_cookiedomain);
 }
 
-//·µ»Øcookie
+//è¿”å›cookie
 function getcvar($var){
 	global $phome_cookievarpre;
 	$tvar=$phome_cookievarpre.$var;
 	return $_COOKIE[$tvar];
 }
 
-//µ¼ÈëÓïÑÔ°ü
+//å¯¼å…¥è¯­è¨€åŒ…
 function LoadLang($file){
 	global $ebaklang;
 	return "lang/".$ebaklang."/pub/".$file;
 }
 
-//²ÎÊı´¦Àíº¯Êı
+//å‚æ•°å¤„ç†å‡½æ•°
 function RepPostVar($val){
 	$val=str_replace(" ","",$val);
 	$val=str_replace("'","",$val);
@@ -122,19 +122,19 @@ function RepPostVar($val){
 	return $val;
 }
 
-//µ¼ÈëÄ£°å
+//å¯¼å…¥æ¨¡æ¿
 function LoadAdminTemp($file){
 	global $ebaklang;
 	return "lang/".$ebaklang."/temp/".$file;
 }
 
-//Ê¹ÓÃ±àÂë
+//ä½¿ç”¨ç¼–ç 
 function HeaderIeChar(){
 	global $ebaklangchar;
 	@header('Content-Type: text/html; charset='.$ebaklangchar);
 }
 
-//·µ»ØÓïÑÔ
+//è¿”å›è¯­è¨€
 function ReturnUseEbakLang(){
 	global $langcharr;
 	$loginlangid=(int)getcvar('loginlangid');

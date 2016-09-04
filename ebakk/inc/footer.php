@@ -17,24 +17,24 @@ if(empty($p))
 {$p=1;}
 $btb=explode(",",$b_table);
 $tbcount=count($btb);
-//×îºóÒ»¸öÎÄ¼þ
+//æœ€åŽä¸€ä¸ªæ–‡ä»¶
 if($p>=$tb[$btb[$t]])
 {
 	$t++;
-	//»Ö¸´Íê±Ï
+	//æ¢å¤å®Œæ¯•
 	if($t>=$tbcount)
 	{
 		echo"<script>alert('".$fun_r['ReDataSuccess']."\\n\\n".$fun_r['TotalUseTime'].ToChangeUseTime($stime)."');self.location.href='../../ReData.php';</script>";
 		exit();
 	}
 	$nfile=$btb[$t]."_1.php";
-	//½øÈëÏÂÒ»¸ö±í
+	//è¿›å…¥ä¸‹ä¸€ä¸ªè¡¨
 	//echo $fun_r['OneTableReSuccOne'].$btb[$t].$fun_r['OneTableReSuccTwo']."<script>self.location.href='$nfile?t=$t&p=0&mydbname=$mydbname&mypath=$mypath&stime=$stime';</script>";
 
 	echo"<meta http-equiv=\"refresh\" content=\"".$waitbaktime.";url=$nfile?t=$t&p=0&mydbname=$mydbname&mypath=$mypath&stime=$stime&waitbaktime=$waitbaktime\">".$fun_r['OneTableReSuccOne'].$btb[$t-1].$fun_r['OneTableReSuccTwo'];
 	exit();
 }
-//½øÈëÏÂÒ»¸öÎÄ¼þ
+//è¿›å…¥ä¸‹ä¸€ä¸ªæ–‡ä»¶
 $p++;
 $nfile=$btb[$t]."_".$p.".php";
 //echo $fun_r['ReOneDataSuccess'].Ebak_EchoReDataSt($btb[$t],$tbcount,$t,$tb[$btb[$t]],$p)."<script>self.location.href='$nfile?t=$t&p=$p&mydbname=$mydbname&mypath=$mypath&stime=$stime';</script>";

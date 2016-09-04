@@ -1,20 +1,20 @@
 <?php
 $fun_r=array();
 $fun_r=Array(
-	'StartToBak'=>'��ϤƳƥ������A���b�i�J���ƥ��D�D�D�D�D�D',
-	'OneTableBakSuccOne'=>'�ƥ� ',
-	'OneTableBakSuccTwo'=>' �������A���b�i�J�U�@�Ӫ��ƥ��D�D�D�D�D�D',
-	'BakOneDataSuccess'=>'�ƥ��@�ռƾڧ����A���b�i�J�U�@�աD�D�D�D�D�D',
-	'GotoDefaultDb'=>'������q�{���ƾڮw,�еy��......',
-	'ConntConnectDb'=>'�챵���WMYSQL�A�г]�m�n�ƾڮw�����]�m�A<a href=SetDb.php><b><u>�I�����B</u></b></a>�i��]�m�ާ@',
-	'OneTableReSuccOne'=>'�٭� ',
-	'OneTableReSuccTwo'=>' �������A���b�i�J�U�@�Ӫ��٭�......',
-	'ReOneDataSuccess'=>'�@�ռƾګ�_�����A���b�i�J�U�@�ռƾ�......',
-	'BakSuccess'=>'���߱z�I�ƥ�����.',
-	'ReDataSuccess'=>'���߱z�I�ƾ��٭짹��.',
-	'TotalUseTime'=>'�@�p�ή�: ',
-	'TimeHour'=>' �p��',
-	'TimeMinute'=>' ����',
-	'TimeSecond'=>' ��'
+	'StartToBak'=>'ㄏて称ЧΘタ秈称',
+	'OneTableBakSuccOne'=>'称 ',
+	'OneTableBakSuccTwo'=>' ЧΘタ秈称',
+	'BakOneDataSuccess'=>'称舱计沮ЧΘタ秈舱',
+	'GotoDefaultDb'=>'タ锣纐粄计沮畐,叫祔单......',
+	'ConntConnectDb'=>'渺钡ぃMYSQL叫砞竚计沮畐闽砞竚<a href=SetDb.php><b><u>翴阑矪</u></b></a>秈︽砞竚巨',
+	'OneTableReSuccOne'=>'临 ',
+	'OneTableReSuccTwo'=>' Ч拨タ秈临......',
+	'ReOneDataSuccess'=>'舱计沮確Ч拨タ秈舱计沮......',
+	'BakSuccess'=>'尺眤称Ч拨.',
+	'ReDataSuccess'=>'尺眤计沮临Ч拨.',
+	'TotalUseTime'=>'璸ノ: ',
+	'TimeHour'=>' ',
+	'TimeMinute'=>' だ牧',
+	'TimeSecond'=>' '
 );
 ?>

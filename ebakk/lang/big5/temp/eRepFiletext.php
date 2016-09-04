@@ -7,52 +7,52 @@ if(!defined('InEmpireBak'))
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=big5">
-<title>´À´«¥Ø¿ý¤å¥ó¤º®e</title>
+<title>è ¢ä¼ ãƒ˜é­ã‚…ãƒ³ãšç”§</title>
 <link href="images/css.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 <table width="100%" border="0" align="center" cellpadding="3" cellspacing="1">
   <tr> 
-    <td>¦ì¸m¡G<a href="RepFiletext.php">´À´«¥Ø¿ý¤å¥ó¤º®e</a></td>
+    <td>îž”ç«šî“<a href="RepFiletext.php">è ¢ä¼ ãƒ˜é­ã‚…ãƒ³ãšç”§</a></td>
   </tr>
 </table>
-<form name="ebakrepfiletext" method="post" action="phome.php" onsubmit="return confirm('½T»{­n´À´«¡H');">
+<form name="ebakrepfiletext" method="post" action="phome.php" onsubmit="return confirm('çµ‹ç²„ç’¶è ¢ä¼ î“Ž');">
   <table width="100%" border="0" align="center" cellpadding="3" cellspacing="1" bgcolor="#0472BC">
     <tr> 
-      <td width="34%" height="25"><strong><font color="#FFFFFF">´À´«¥Ø¿ý¤å¥ó¤º®e</font></strong> 
+      <td width="34%" height="25"><strong><font color="#FFFFFF">è ¢ä¼ ãƒ˜é­ã‚…ãƒ³ãšç”§</font></strong> 
         <input name="phome" type="hidden" id="phome" value="RepPathFiletext"></td>
       <td width="66%" height="25">&nbsp;</td>
     </tr>
     <tr bgcolor="#FFFFFF"> 
-      <td height="25">´À´«¥Ø¿ý¡G</td>
+      <td height="25">è ¢ä¼ ãƒ˜é­î“</td>
       <td height="25"> 
         <?=$bakpath?>
         / 
         <input name="mypath" type="text" id="mypath" value="<?=$mypath?>" size="38"> 
-        <input type="button" name="Submit2" value="¿ï¾Ü¥Ø¿ý" onclick="javascript:window.open('ChangePath.php?change=1&toform=ebakrepfiletext','','width=750,height=500,scrollbars=yes');"></td>
+        <input type="button" name="Submit2" value="åŒ¡æ‹’ãƒ˜é­" onclick="javascript:window.open('ChangePath.php?change=1&toform=ebakrepfiletext','','width=750,height=500,scrollbars=yes');"></td>
     </tr>
     <tr bgcolor="#FFFFFF"> 
-      <td height="25" valign="top">±N¦r²Å¡G<br> <br> <font color="#666666">(­Y¬O¥¿«h´À´«¡A¥i¥Î¡u*¡vªí¥Ü¥ô·N¦r²Å) 
+      <td height="25" valign="top">ç›¢î›˜æ‰î“<br> <br> <font color="#666666">(ç’çŒã‚¿çŽ¥è ¢ä¼ î“‡î™¯ãƒŽî“»*î“¼îŒãƒœãƒ´ç¨®î›˜æ‰) 
         </font></td>
       <td height="25"><textarea name="oldword" cols="70" rows="8" id="oldword"></textarea> 
       </td>
     </tr>
     <tr bgcolor="#FFFFFF"> 
-      <td height="25" valign="top">´À´«¬°¡G</td>
+      <td height="25" valign="top">è ¢ä¼ îƒ‹î“</td>
       <td height="25"><textarea name="newword" cols="70" rows="8" id="newword"></textarea></td>
     </tr>
     <tr bgcolor="#FFFFFF"> 
-      <td height="25">¿ï¶µ¡G</td>
+      <td height="25">åŒ¡å…œî“</td>
       <td height="25"><input name="dozz" type="checkbox" id="dozz" value="1">
-        ¥¿«h´À´«</td>
+        ã‚¿çŽ¥è ¢ä¼ </td>
     </tr>
     <tr bgcolor="#FFFFFF"> 
       <td height="25"> <div align="left"> </div>
         
       </td>
-      <td height="25"><input type="submit" name="Submit" value="¶}©l´À´«">&nbsp;&nbsp;
-        <input type="reset" name="Submit3" value="­«¸m"> </td>
+      <td height="25"><input type="submit" name="Submit" value="ç§¨ï¹è ¢ä¼ ">&nbsp;&nbsp;
+        <input type="reset" name="Submit3" value="î„¤ç«š"> </td>
     </tr>
   </table>
 </form>

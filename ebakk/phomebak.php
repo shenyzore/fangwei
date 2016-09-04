@@ -11,11 +11,11 @@ $loginin=$lur['username'];
 $rnd=$lur['rnd'];
 $link=db_connect();
 $empire=new mysqlquery();
-if($phome=="DoEbak")//³õÊ¹»¯±¸·İ±í
+if($phome=="DoEbak")//åˆä½¿åŒ–å¤‡ä»½è¡¨
 {
 	Ebak_DoEbak($_POST);
 }
-elseif($phome=="BakExe")//±¸·İ±í(°´ÎÄ¼ş)
+elseif($phome=="BakExe")//å¤‡ä»½è¡¨(æŒ‰æ–‡ä»¶)
 {
 	$t=$_GET['t'];
 	$s=$_GET['s'];
@@ -27,7 +27,7 @@ elseif($phome=="BakExe")//±¸·İ±í(°´ÎÄ¼ş)
 	$stime=$_GET['stime'];
 	Ebak_BakExe($t,$s,$p,$mypath,$alltotal,$thenof,$fnum,$stime);
 }
-elseif($phome=="BakExeT")//±¸·İ±í(°´¼ÇÂ¼)
+elseif($phome=="BakExeT")//å¤‡ä»½è¡¨(æŒ‰è®°å½•)
 {
 	$t=$_GET['t'];
 	$s=$_GET['s'];
@@ -41,7 +41,7 @@ elseif($phome=="BakExeT")//±¸·İ±í(°´¼ÇÂ¼)
 	$stime=$_GET['stime'];
 	Ebak_BakExeT($t,$s,$p,$mypath,$alltotal,$thenof,$fnum,$auf,$aufval,$stime);
 }
-elseif($phome=="ReData")//»Ö¸´Êı¾İ
+elseif($phome=="ReData")//æ¢å¤æ•°æ®
 {
 	$add=$_POST['add'];
 	$mypath=$_POST['mypath'];

@@ -1,6 +1,6 @@
 <?php
 require('class/connect.php');
-//------------------------------------------------------È¡µÃËæ»úÊý
+//------------------------------------------------------å–å¾—éšæœºæ•°
 function domake_password($pw_length)
 {
 $low_ascii_bound=48;
@@ -16,12 +16,12 @@ $i++;
 }
 return $password1;
 }
-//------------------------------------------------------ÏÔÊ¾ÑéÖ¤Âë
+//------------------------------------------------------æ˜¾ç¤ºéªŒè¯ç 
 function ShowKey()
 {
 $key=strtolower(domake_password(4));
 $set=esetcookie("checkkey",$key);
-	//ÊÇ·ñÖ§³Ögd¿â
+	//æ˜¯å¦æ”¯æŒgdåº“
 if (function_exists("imagejpeg")) {
    header ("Content-type: image/jpeg");
    $img=imagecreate(69,20);

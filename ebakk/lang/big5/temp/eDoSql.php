@@ -7,27 +7,27 @@ if(!defined('InEmpireBak'))
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=big5">
-<title>°õ¦æSQL»y¥y</title>
+<title>ç£…ï¸½SQLç²‚î™¿</title>
 <link href="images/css.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 <table width="98%%" border="0" align="center" cellpadding="3" cellspacing="1">
   <tr>
-    <td height="25">¦ì¸m¡G°õ¦æSQL»y¥y</td>
+    <td height="25">î”ç«šî“ç£…ï¸½SQLç²‚î™¿</td>
   </tr>
 </table>
 
-<form action="phome.php" method="POST" name="form1" onsubmit="return confirm('½T»{­n°õ¦æ¡H');">
+<form action="phome.php" method="POST" name="form1" onsubmit="return confirm('çµ‹ç²„ç’¶ç£…ï¸½î“');">
   <table width="98%" border="0" align="center" cellpadding="3" cellspacing="1" bgcolor="#0472BC">
     <tr> 
-      <td height="25"><div align="center"><strong><font color="#FFFFFF">°õ¦æSQL»y¥y</font></strong></div></td>
+      <td height="25"><div align="center"><strong><font color="#FFFFFF">ç£…ï¸½SQLç²‚î™¿</font></strong></div></td>
     </tr>
     <tr> 
       <td height="25" bgcolor="#FFFFFF"><div align="center"> 
           <table width="560" border="0" cellpadding="3" cellspacing="1">
             <tr>
-              <td width="50%">¼Æ¾Ú®w¡G 
+              <td width="50%">è®¡æ²®ç•î“ 
                 <select name="mydbname" id="mydbname">
 				<option value=""></option>
 				<?php
@@ -35,11 +35,11 @@ if(!defined('InEmpireBak'))
 				?>
                 </select>
               </td>
-              <td><div align="right">¼Æ¾Ú½s½X¡G 
+              <td><div align="right">è®¡æ²®çµªçµî“ 
                   <input name="mydbchar" type="text" id="mydbchar" value="<?=$phome_db_char?>" size="16">
                   <font color="#666666"> 
                   <select name="selectchar" onchange="document.form1.mydbchar.value=this.value">
-                    <option value="">¿ï¾Ü</option>
+                    <option value="">åŒ¡æ‹’</option>
                     <?php
 				echo $chars;
 				?>
@@ -56,36 +56,36 @@ if(!defined('InEmpireBak'))
     </tr>
     <tr> 
       <td height="25" bgcolor="#FFFFFF"><div align="center"> 
-          <input type="submit" name="Submit" value=" °õ¦æSQL">
+          <input type="submit" name="Submit" value=" ç£…ï¸½SQL">
           &nbsp;&nbsp; 
-          <input type="reset" name="Submit2" value="­«¸m">
+          <input type="reset" name="Submit2" value="î„¤ç«š">
           <input name="phome" type="hidden" id="phome" value="DoExecSql">
         </div></td>
     </tr>
   </table>
   </form>
   <br>
-<form action="phome.php" method="post" enctype="multipart/form-data" name="form2" onsubmit="return confirm('½T»{­n¾É¤J¡H');">
+<form action="phome.php" method="post" enctype="multipart/form-data" name="form2" onsubmit="return confirm('çµ‹ç²„ç’¶æ—§î—°î“');">
   <table width="98%" border="0" align="center" cellpadding="3" cellspacing="1" bgcolor="#0472BC">
     <tr> 
-      <td height="25"><div align="center"><strong><font color="#FFFFFF">¾É¤JSQL¤å¥ó</font></strong></div></td>
+      <td height="25"><div align="center"><strong><font color="#FFFFFF">æ—§î—°SQLã‚…ãƒ³</font></strong></div></td>
     </tr>
     <tr> 
       <td height="25" bgcolor="#FFFFFF"><div align="center"> 
           <table width="560" border="0" cellpadding="3" cellspacing="1">
             <tr> 
-              <td width="50%">¼Æ¾Ú®w¡G 
+              <td width="50%">è®¡æ²®ç•î“ 
                 <select name="mydbname" id="mydbname">
                   <option value=""></option>
                   <?php
 				echo $db;
 				?>
                 </select> </td>
-              <td><div align="right">¼Æ¾Ú½s½X¡G 
+              <td><div align="right">è®¡æ²®çµªçµî“ 
                   <input name="mydbchar" type="text" id="mydbchar" value="<?=$phome_db_char?>" size="16">
                   <font color="#666666"> 
                   <select name="selectchar" onchange="document.form2.mydbchar.value=this.value">
-                    <option value="">¿ï¾Ü</option>
+                    <option value="">åŒ¡æ‹’</option>
                     <?php
 				echo $chars;
 				?>
@@ -99,9 +99,9 @@ if(!defined('InEmpireBak'))
       <td height="25" bgcolor="#FFFFFF"><div align="center">
           <table width="560" border="0" cellspacing="1" cellpadding="3">
             <tr>
-              <td>SQL¤å¥ó¡G
+              <td>SQLã‚…ãƒ³î“
                 <input name="file" type="file" size="38">
-                <font color="#666666">(*.sql¡A³Ì¤j¤å¥ó¡G<?php echo @get_cfg_var("file_uploads")?@get_cfg_var("upload_max_filesize"):'¤£¤¹³\¤W¶Ç';?>)</font> 
+                <font color="#666666">(*.sqlî“‡ç¨‹î˜ã‚…ãƒ³î“<?php echo @get_cfg_var("file_uploads")?@get_cfg_var("upload_max_filesize"):'ãƒã™ç ›î—½è‚š';?>)</font> 
               </td>
             </tr>
           </table>
@@ -109,9 +109,9 @@ if(!defined('InEmpireBak'))
     </tr>
     <tr> 
       <td height="25" bgcolor="#FFFFFF"><div align="center"> 
-          <input type="submit" name="Submit3" value="¾É¤JSQL">
+          <input type="submit" name="Submit3" value="æ—§î—°SQL">
           &nbsp;&nbsp; 
-          <input type="reset" name="Submit22" value="­«¸m">
+          <input type="reset" name="Submit22" value="î„¤ç«š">
           <input name="phome" type="hidden" id="phome" value="DoTranExecSql">
         </div></td>
     </tr>

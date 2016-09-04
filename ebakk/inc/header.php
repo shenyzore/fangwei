@@ -20,7 +20,7 @@ if(empty($mydbname)||empty($mypath))
 {
 	printerror("ErrorUrl","history.go(-1)");
 }
-//±àÂë
+//ç¼–ç 
 DoSetDbChar($b_dbchar);
 $usql=$empire->query("use `$mydbname`");
 ?>

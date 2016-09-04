@@ -8,7 +8,7 @@ $rnd=$lur['rnd'];
 $link=db_connect();
 $empire=new mysqlquery();
 $chars=Ebak_ReturnDbCharList('');
-//Êı¾İ¿âÁĞ±í
+//æ•°æ®åº“åˆ—è¡¨
 $mydbname=$_GET['mydbname'];
 $selectdbname=$phome_db_dbname;
 if($mydbname)

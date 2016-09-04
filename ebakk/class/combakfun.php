@@ -1,12 +1,12 @@
 <?php
-//²ÎÊıÉèÖÃ
+//å‚æ•°è®¾ç½®
 function Ebak_SetDb($add){
 	global $phome_db_password,$set_password,$phome_db_dbname;
 	if(empty($add['outtime']))
 	{
 		$add['outtime']=60;
 	}
-	//ĞŞ¸ÄÃÜÂë
+	//ä¿®æ”¹å¯†ç 
 	if(empty($add['dbpassword']))
 	{
 		$add['dbpassword']=$phome_db_password;
@@ -16,7 +16,7 @@ function Ebak_SetDb($add){
 		$add['dbpassword']='';
 	}
 	$dblocalhost=$add['dbhost'];
-	//¶Ë¿Ú
+	//ç«¯å£
 	if($add['dbport'])
 	{
 		$dblocalhost.=":".$add['dbport'];
@@ -26,7 +26,7 @@ function Ebak_SetDb($add){
 	{
 		printerror("FailDbuser","history.go(-1)");
 	}
-	//Ä¬ÈÏÊı¾İ¿â
+	//é»˜è®¤æ•°æ®åº“
 	if($add['dbname'])
 	{
 		if($add['dbname']!=$phome_db_dbname)
@@ -38,7 +38,7 @@ function Ebak_SetDb($add){
 			}
 		}
 	}
-	//mysql°æ±¾
+	//mysqlç‰ˆæœ¬
 	if($add['mysqlver']=='auto')
 	{
 		$add['mysqlver']=Ebak_GetMysqlVerForDb();
@@ -47,7 +47,7 @@ function Ebak_SetDb($add){
 			printerror("NotAutoDbVer","history.go(-1)");
 		}
 	}
-	//ĞŞ¸ÄÃÜÂë
+	//ä¿®æ”¹å¯†ç 
 	if($add['adminpassword'])
 	{
 		$add['adminpassword']=md5($add['adminpassword']);
@@ -57,7 +57,7 @@ function Ebak_SetDb($add){
 	{
 		$add['adminpassword']=$set_password;
 	}
-	//Ä¿Â¼
+	//ç›®å½•
 	if(empty($add['sbakpath']))
 	{
 		$add['sbakpath']="bdata";
@@ -130,7 +130,7 @@ HeaderIeChar();
 	printerror("SetDbSuccess","SetDb.php");
 }
 
-//ĞŞ¸´±í
+//ä¿®å¤è¡¨
 function Ebak_Rep($tablename,$dbname){
 	global $empire;
 	$dbname=RepPostVar($dbname);
@@ -147,7 +147,7 @@ function Ebak_Rep($tablename,$dbname){
 	printerror("RepairTbSuccess","ChangeTable.php?mydbname=$dbname");
 }
 
-//ÓÇ»¯±í
+//å¿§åŒ–è¡¨
 function Ebak_Opi($tablename,$dbname){
 	global $empire;
 	$dbname=RepPostVar($dbname);
@@ -164,7 +164,7 @@ function Ebak_Opi($tablename,$dbname){
 	printerror("OptimizeTbSuccess","ChangeTable.php?mydbname=$dbname");
 }
 
-//É¾³ıÊı¾İ±í
+//åˆ é™¤æ•°æ®è¡¨
 function Ebak_Drop($tablename,$dbname){
 	global $empire;
 	$dbname=RepPostVar($dbname);
@@ -190,7 +190,7 @@ function Ebak_Drop($tablename,$dbname){
 	printerror("DelTbSuccess","ChangeTable.php?mydbname=$dbname");
 }
 
-//É¾³ıÊı¾İ¿â
+//åˆ é™¤æ•°æ®åº“
 function Ebak_DropDb($dbname){
 	global $empire;
 	$dbname=RepPostVar($dbname);
@@ -207,7 +207,7 @@ function Ebak_DropDb($dbname){
 	{printerror("DbError","history.go(-1)");}
 }
 
-//½¨Á¢Êı¾İ¿â
+//å»ºç«‹æ•°æ®åº“
 function Ebak_CreatDb($dbname,$dbchar=''){
 	global $empire,$phome_db_ver;
 	$dbname=RepPostVar($dbname);
@@ -229,7 +229,7 @@ function Ebak_CreatDb($dbname,$dbchar=''){
 	{printerror("DbError","history.go(-1)");}
 }
 
-//Çå¿Õ±í
+//æ¸…ç©ºè¡¨
 function Ebak_EmptyTable($tablename,$dbname){
 	global $empire;
 	$dbname=RepPostVar($dbname);
@@ -244,7 +244,7 @@ function Ebak_EmptyTable($tablename,$dbname){
 	printerror("TruncateTbSuccess","ChangeTable.php?mydbname=$dbname");
 }
 
-//ÅúÁ¿Ìæ»»±íÃû
+//æ‰¹é‡æ›¿æ¢è¡¨å
 function Ebak_ReplaceTable($tablename,$oldpre,$newpre,$dbname){
 	global $empire;
 	if(!$oldpre)
@@ -266,7 +266,7 @@ function Ebak_ReplaceTable($tablename,$oldpre,$newpre,$dbname){
 	printerror("ReplaceTbSuccess","ChangeTable.php?mydbname=$dbname");
 }
 
-//±£´æÉèÖÃ
+//ä¿å­˜è®¾ç½®
 function Ebak_SaveSeting($add){
 	$savename=$add['savename'];
 	if(strstr($savename,'.')||strstr($savename,'/')||strstr($savename,"\\"))
@@ -282,7 +282,7 @@ function Ebak_SaveSeting($add){
 	$beover=(int)$add['beover'];
 	$add['waitbaktime']=(int)$add['waitbaktime'];
 	$bakdatatype=(int)$add['bakdatatype'];
-	//±íÁĞ±í
+	//è¡¨åˆ—è¡¨
 	$tblist="";
 	$tablename=$add['tablename'];
 	$count=count($tablename);
@@ -318,7 +318,7 @@ function Ebak_SaveSeting($add){
 	printerror("SetSaveSuccess","history.go(-1)");
 }
 
-//É¾³ıÉèÖÃ
+//åˆ é™¤è®¾ç½®
 function Ebak_DelSeting($add){
 	$savename=$add['savename'];
 	if(strstr($savename,'.')||strstr($savename,'/')||strstr($savename,"\\"))
@@ -330,7 +330,7 @@ function Ebak_DelSeting($add){
 	printerror("DelSaveSetSuccess","ListSetbak.php?mydbname=$add[mydbname]&change=$add[change]");
 }
 
-//É¾³ı±¸·İÄ¿Â¼
+//åˆ é™¤å¤‡ä»½ç›®å½•
 function Ebak_DelBakpath($path){
 	global $bakpath;
 	if(strstr($path,".."))
@@ -346,7 +346,7 @@ function Ebak_DelBakpath($path){
 	printerror("DelPathSuccess","ChangePath.php?change=".$_GET['change']);
 }
 
-//É¾³ıÑ¹Ëõ°ü
+//åˆ é™¤å‹ç¼©åŒ…
 function Ebak_DelZip($file){
 	global $bakzippath;
 	if(strstr($file,".."))
@@ -364,7 +364,7 @@ function Ebak_DelZip($file){
 	printerror("DelZipSuccess","history.go(-1)",9);
 }
 
-//Ö´ĞĞSQLÓï¾ä
+//æ‰§è¡ŒSQLè¯­å¥
 function Ebak_DoExecSql($add){
 	global $empire,$phome_db_dbname,$phome_db_ver,$phome_db_char;
 	$query=$add['query'];
@@ -372,12 +372,12 @@ function Ebak_DoExecSql($add){
 	{
 		printerror("EmptyRunSql","history.go(-1)");
     }
-	//Êı¾İ¿â
+	//æ•°æ®åº“
 	if($add['mydbname'])
 	{
 		$empire->query("use `".$add['mydbname']."`");
 	}
-	//±àÂë
+	//ç¼–ç 
 	if($add['mydbchar'])
 	{
 		DoSetDbChar($add['mydbchar']);
@@ -387,19 +387,19 @@ function Ebak_DoExecSql($add){
 	printerror("RunSqlSuccess","DoSql.php");
 }
 
-//ÉÏ´«Ö´ĞĞSQL
+//ä¸Šä¼ æ‰§è¡ŒSQL
 function Ebak_DoTranExecSql($file,$file_name,$file_type,$file_size,$add){
 	global $empire,$phome_db_dbname,$phome_db_ver,$phome_db_char;
 	if(!$file_name||!$file_size)
 	{
 		printerror("NotChangeSQLFile","history.go(-1)");
 	}
-	$filetype=GetFiletype($file_name);//È¡µÃÀ©Õ¹Ãû
+	$filetype=GetFiletype($file_name);//å–å¾—æ‰©å±•å
 	if($filetype!=".sql")
 	{
 		printerror("NotTranSQLFile","history.go(-1)");
 	}
-	//ÉÏ´«ÎÄ¼ş
+	//ä¸Šä¼ æ–‡ä»¶
 	$newfile='tmp/uploadsql'.time().'.sql';
 	$cp=Ebak_DoTranFile($file,$newfile);
 	if(empty($cp))
@@ -412,12 +412,12 @@ function Ebak_DoTranExecSql($file,$file_name,$file_type,$file_size,$add){
 	{
 		printerror("EmptyRunSql","history.go(-1)");
     }
-	//Êı¾İ¿â
+	//æ•°æ®åº“
 	if($add['mydbname'])
 	{
 		$empire->query("use `".$add['mydbname']."`");
 	}
-	//±àÂë
+	//ç¼–ç 
 	if($add['mydbchar'])
 	{
 		DoSetDbChar($add['mydbchar']);
@@ -426,7 +426,7 @@ function Ebak_DoTranExecSql($file,$file_name,$file_type,$file_size,$add){
 	printerror("RunSqlSuccess","DoSql.php");
 }
 
-//Ìæ»»ÎÄ¼şÄÚÈİ
+//æ›¿æ¢æ–‡ä»¶å†…å®¹
 function Ebak_RepPathFiletext($add){
 	global $bakpath;
 	$mypath=trim($add['mypath']);

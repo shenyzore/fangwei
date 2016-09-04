@@ -1,73 +1,73 @@
 <?php
 class mysqlquery
 {
-	var $sql;//sqlÓï¾äÖ´ÐÐ½á¹û
-	var $query;//sqlÓï¾ä
-	var $num;//·µ»Ø¼ÇÂ¼Êý
-	var $r;//·µ»ØÊý×é
-	var $id;//·µ»ØÊý¾Ý¿âidºÅ
-	//Ö´ÐÐmysql_query()Óï¾ä
+	var $sql;//sqlè¯­å¥æ‰§è¡Œç»“æžœ
+	var $query;//sqlè¯­å¥
+	var $num;//è¿”å›žè®°å½•æ•°
+	var $r;//è¿”å›žæ•°ç»„
+	var $id;//è¿”å›žæ•°æ®åº“idå·
+	//æ‰§è¡Œmysql_query()è¯­å¥
 	function query($query)
 	{
 		$this->sql=mysql_query($query) or die(mysql_error()."<br>".$query);
 		return $this->sql;
 	}
-	//Ö´ÐÐmysql_query()Óï¾ä2
+	//æ‰§è¡Œmysql_query()è¯­å¥2
 	function query1($query)
 	{
 		$this->sql=mysql_query($query);
 		return $this->sql;
 	}
-	//Ö´ÐÐmysql_fetch_array()
-	function fetch($sql)//´Ë·½·¨µÄ²ÎÊýÊÇ$sql¾ÍÊÇsqlÓï¾äÖ´ÐÐ½á¹û
+	//æ‰§è¡Œmysql_fetch_array()
+	function fetch($sql)//æ­¤æ–¹æ³•çš„å‚æ•°æ˜¯$sqlå°±æ˜¯sqlè¯­å¥æ‰§è¡Œç»“æžœ
 	{
 		$this->r=mysql_fetch_array($sql);
 		return $this->r;
 	}
-	//Ö´ÐÐfetchone(mysql_fetch_array())
-	//´Ë·½·¨Óëfetch()µÄÇø±ðÊÇ:1¡¢´Ë·½·¨µÄ²ÎÊýÊÇ$query¾ÍÊÇsqlÓï¾ä 
-	//2¡¢´Ë·½·¨ÓÃÓÚwhile(),for()Êý¾Ý¿âÖ¸Õë²»»á×Ô¶¯ÏÂÒÆ£¬¶øfetch()¿ÉÒÔ×Ô¶¯ÏÂÒÆ¡£
+	//æ‰§è¡Œfetchone(mysql_fetch_array())
+	//æ­¤æ–¹æ³•ä¸Žfetch()çš„åŒºåˆ«æ˜¯:1ã€æ­¤æ–¹æ³•çš„å‚æ•°æ˜¯$queryå°±æ˜¯sqlè¯­å¥ 
+	//2ã€æ­¤æ–¹æ³•ç”¨äºŽwhile(),for()æ•°æ®åº“æŒ‡é’ˆä¸ä¼šè‡ªåŠ¨ä¸‹ç§»ï¼Œè€Œfetch()å¯ä»¥è‡ªåŠ¨ä¸‹ç§»ã€‚
 	function fetch1($query)
 	{
 		$this->sql=$this->query($query);
 		$this->r=mysql_fetch_array($this->sql);
 		return $this->r;
 	}
-	//Ö´ÐÐmysql_num_rows()
-	function num($query)//´ËÀàµÄ²ÎÊýÊÇ$query¾ÍÊÇsqlÓï¾ä
+	//æ‰§è¡Œmysql_num_rows()
+	function num($query)//æ­¤ç±»çš„å‚æ•°æ˜¯$queryå°±æ˜¯sqlè¯­å¥
 	{
 		$this->sql=$this->query($query);
 		$this->num=mysql_num_rows($this->sql);
 		return $this->num;
 	}
-	//Ö´ÐÐnumone(mysql_num_rows())
-	//´Ë·½·¨Óënum()µÄÇø±ðÊÇ£º1¡¢´Ë·½·¨µÄ²ÎÊýÊÇ$sql¾ÍÊÇsqlÓï¾äµÄÖ´ÐÐ½á¹û¡£
+	//æ‰§è¡Œnumone(mysql_num_rows())
+	//æ­¤æ–¹æ³•ä¸Žnum()çš„åŒºåˆ«æ˜¯ï¼š1ã€æ­¤æ–¹æ³•çš„å‚æ•°æ˜¯$sqlå°±æ˜¯sqlè¯­å¥çš„æ‰§è¡Œç»“æžœã€‚
 	function num1($sql)
 	{
 		$this->num=mysql_num_rows($sql);
 		return $this->num;
 	}
-	//Ö´ÐÐnumone(mysql_num_rows())
-	//Í³¼Æ¼ÇÂ¼Êý
+	//æ‰§è¡Œnumone(mysql_num_rows())
+	//ç»Ÿè®¡è®°å½•æ•°
 	function gettotal($query)
 	{
 		$this->r=$this->fetch1($query);
 		return $this->r['total'];
 	}
-	//Ö´ÐÐfree(mysql_result_free())
-	//´Ë·½·¨µÄ²ÎÊýÊÇ$sql¾ÍÊÇsqlÓï¾äµÄÖ´ÐÐ½á¹û¡£Ö»ÓÐÔÚÓÃµ½mysql_fetch_arrayµÄÇé¿öÏÂÓÃ
+	//æ‰§è¡Œfree(mysql_result_free())
+	//æ­¤æ–¹æ³•çš„å‚æ•°æ˜¯$sqlå°±æ˜¯sqlè¯­å¥çš„æ‰§è¡Œç»“æžœã€‚åªæœ‰åœ¨ç”¨åˆ°mysql_fetch_arrayçš„æƒ…å†µä¸‹ç”¨
 	function free($sql)
 	{
 		mysql_free_result($sql);
 	}
-	//Ö´ÐÐseek(mysql_data_seek())
-	//´Ë·½·¨µÄ²ÎÊýÊÇ$sql¾ÍÊÇsqlÓï¾äµÄÖ´ÐÐ½á¹û,$pitÎªÖ´ÐÐÖ¸ÕëµÄÆ«ÒÆÊý
+	//æ‰§è¡Œseek(mysql_data_seek())
+	//æ­¤æ–¹æ³•çš„å‚æ•°æ˜¯$sqlå°±æ˜¯sqlè¯­å¥çš„æ‰§è¡Œç»“æžœ,$pitä¸ºæ‰§è¡ŒæŒ‡é’ˆçš„åç§»æ•°
 	function seek($sql,$pit)
 	{
 		mysql_data_seek($sql,$pit);
 	}
-	//Ö´ÐÐid(mysql_insert_id())
-	function lastid()//È¡µÃ×îºóÒ»´ÎÖ´ÐÐmysqlÊý¾Ý¿âidºÅ
+	//æ‰§è¡Œid(mysql_insert_id())
+	function lastid()//å–å¾—æœ€åŽä¸€æ¬¡æ‰§è¡Œmysqlæ•°æ®åº“idå·
 	{
 		$this->id=mysql_insert_id();
 		return $this->id;

@@ -7,7 +7,7 @@ $loginin=$lur['username'];
 $rnd=$lur['rnd'];
 $link=db_connect();
 $empire=new mysqlquery();
-//Êı¾İ¿â
+//æ•°æ®åº“
 $mydbname=RepPostVar($_GET['mydbname']);
 $mytbname=RepPostVar($_GET['mytbname']);
 if(empty($mydbname)||empty($mytbname))

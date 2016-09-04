@@ -7,7 +7,7 @@ if(!defined('InEmpireBak'))
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=big5">
-<title>«Ò°ê³Æ¥÷¤ı¦Z¥xµn¿ı</title>
+<title>î‚ç“£ç§°î½î»î›€î™¾ç¥…é­</title>
 <link href="images/css.css" rel="stylesheet" type="text/css">
 <script>
 if(self!=top)
@@ -24,7 +24,7 @@ if(self!=top)
       <td><div align="center"><a href="http://www.phome.net" target="_blank"><img src="images/logo.jpg" alt="Empire Soft" width="180" height="65" border="0"></a></div></td>
     </tr>
     <tr>
-      <td><div align="center"><strong><font size="5">Åwªï¨Ï¥Î&nbsp;EmpireBak&nbsp;v2010</font></strong></div></td>
+      <td><div align="center"><strong><font size="5">èˆ§îã„ãƒ&nbsp;EmpireBak&nbsp;v2010</font></strong></div></td>
     </tr>
     <tr>
       
@@ -47,14 +47,14 @@ if(self!=top)
         <form name="form1" method="post" action="phome.php">
           <input type="hidden" name="phome" value="login">
           <tr> 
-            <td height="25" colspan="2"><div align="center"><strong><font color="#FFFFFF">ºŞ²z­ûµn¿ı</font></strong></div></td>
+            <td height="25" colspan="2"><div align="center"><strong><font color="#FFFFFF">æ¨ç¶î…´ç¥…é­</font></strong></div></td>
           </tr>
           <tr bgcolor="#FFFFFF"> 
-            <td width="32%" height="25">¥Î¤á¦W¡G</td>
+            <td width="32%" height="25">ãƒã‚îš½î“</td>
             <td width="68%" height="25"><input name="lusername" type="text" id="lusername" size="30"></td>
           </tr>
           <tr bgcolor="#FFFFFF"> 
-            <td height="25">±K½X¡G</td>
+            <td height="25">ç›çµî“</td>
             <td height="25"><input name="lpassword" type="password" id="lpassword" size="30"></td>
           </tr>
 		  <?php
@@ -62,7 +62,7 @@ if(self!=top)
 		  {
 			?>
           <tr bgcolor="#FFFFFF"> 
-            <td height="25">»{ÃÒ½X¡G</td>
+            <td height="25">ç²„é¡çµî“</td>
             <td height="25"><input name="loginauth" type="password" size="30"></td>
           </tr>
 			<?php
@@ -73,7 +73,7 @@ if(self!=top)
 		{
 		?>
           <tr bgcolor="#FFFFFF"> 
-            <td height="25">ÅçÃÒ½X¡G</td>
+            <td height="25">å–·é¡çµî“</td>
             <td height="25"> <table width="100%" border="0" cellspacing="0" cellpadding="0">
                 <tr> 
                   <td width="52"> <input name="key" type="text" id="key" size="6"> 
@@ -87,10 +87,10 @@ if(self!=top)
 		?>
           <tr bgcolor="#FFFFFF"> 
             <td height="25">&nbsp;</td>
-            <td height="25"><input type="submit" name="Submit" value="µn¿ı">&nbsp;&nbsp; <input type="reset" name="Submit2" value="­«¸m"></td>
+            <td height="25"><input type="submit" name="Submit" value="ç¥…é­">&nbsp;&nbsp; <input type="reset" name="Submit2" value="î„¤ç«š"></td>
           </tr>
           <tr bgcolor="#FFFFFF"> 
-            <td height="25" colspan="2"><div align="center">(<a href="doc.html" target="_blank">¬d¬İ«Ò°ê³Æ¥÷¤ı»¡©ú¤åÀÉ</a>)</div></td>
+            <td height="25" colspan="2"><div align="center">(<a href="doc.html" target="_blank">ç©îƒ¸î‚ç“£ç§°î½î»å¼§î ‹ã‚…éƒ</a>)</div></td>
           </tr>
         </form>
       </table></td>
