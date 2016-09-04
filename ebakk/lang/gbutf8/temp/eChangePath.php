@@ -57,7 +57,7 @@ function ChangePath(pathname)
     <td height="25"> <div align="center"> [<a href="<? echo $bakpath."/".$file."/readme.txt"?>" target=_blank>查看备份说明</a>]</div></td>
     <td><div align="center">[<a href="#ebak" onclick="window.open('phome.php?phome=DoZip&p=<?=$file?>&change=<?=$change?>','','width=350,height=160');">打包并下载</a>]&nbsp;&nbsp;[<a href="RepFiletext.php?mypath=<?=$file?>">替换文件内容</a>]&nbsp;&nbsp;[<a href="phome.php?phome=DelBakpath&path=<?=$file?>&change=<?=$change?>" onclick="return confirm('确认要删除？');">删除目录</a>]</div></td>
   </tr>
-  <?
+  <?php
      }
   }
   ?>
